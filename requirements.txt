@@ -3,6 +3,7 @@ South==0.8.3
 Unidecode==0.04.14
 distribute==0.6.34
 django-autoslug==1.7.1
+django-bootstrap3==2.0.0
 -e git+https://github.com/jleivaizq/django-cities.git@9af257b312f43b3bc75ccc9393e821144b9b6a51#egg=django_cities-master
 django-cities-light==2.1.5
 progressbar==2.3dev

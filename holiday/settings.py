@@ -26,6 +26,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+    BASE_DIR + '/templates/'
+)
 
 # Application definition
 
@@ -40,6 +43,8 @@ INSTALLED_APPS = (
     'south',
     'cities_light',
     'cities',
+    'itinerary',
+    'bootstrap3',
 )
 
 MIDDLEWARE_CLASSES = (
