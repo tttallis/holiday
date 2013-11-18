@@ -5,6 +5,9 @@ class Day(models.Model):
     date = models.DateField()
     locations = models.ManyToManyField('cities.City', blank=True, null=True, through='DayLocation')
     
+    class Meta:
+        ordering = ['date']
+    
     def __unicode__(self):
         return self.date.isoformat()
         

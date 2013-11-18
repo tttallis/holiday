@@ -44,7 +44,8 @@ INSTALLED_APPS = (
     'cities_light',
     'cities',
     'itinerary',
-    'bootstrap3',
+    'django_extensions',
+    'bootstrap',
 )
 
 MIDDLEWARE_CLASSES = (

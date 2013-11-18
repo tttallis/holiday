@@ -11,3 +11,9 @@ def day(request, year, month, daynum):
     return render_to_response('itinerary/day.html', {
         'day': day,
     }, context_instance=RequestContext(request))
+
+def days(request):
+    days = Day.objects.all()
+    return render_to_response('itinerary/days.html', {
+        'days': days,
+    }, context_instance=RequestContext(request))

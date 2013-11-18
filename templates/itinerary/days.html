@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block bootstrap3_content %}
+    <div class="container">
+        <h1>{% block title %}{{ day }}{% endblock %}</h1>
+
+
+        {% block content %}
+        {% for location in day.locations.all %}
+            {{ location }}
+        {% endfor %}
+        
+        {% endblock %}
+    </div>
+
+{% endblock %}
